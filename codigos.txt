@@ -57,3 +57,20 @@ procedure HastePD(vetor p[], int n)
         s[i] = j
   
   return r[n] and s
+
+
+  5-)
+
+  procedure ProgDinMatr(vetor P[])
+    n = P.size() - 1
+    for i=1 -> n do
+      m[i,j] = 0
+    
+    for l=2 -> n do
+      j = i+l - 1
+      m[i,j] = inf
+      for k = i -> j do
+        g = m[i,k] + m[k+1,j] + p[i-1].p[k].p[j]
+        if g < m[i,j] then
+          m[i,j] = g
+          s[i,j] = k

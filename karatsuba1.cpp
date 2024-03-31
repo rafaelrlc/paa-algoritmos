@@ -4,7 +4,7 @@
 using namespace std;
 
 int contar_digitos(long long int num) {
-    return num == 0 ? 1 : static_cast<int>(log10(abs(num))) + 1;
+    return num == 0 ? 1 : log10(abs(num)) + 1;
 }
 
 
