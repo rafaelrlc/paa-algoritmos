@@ -1,10 +1,11 @@
 #include <iostream>
 #include <vector>
+#include <climits>
 
 using namespace std;
 
 pair<int, vector<int>> HastePD(vector<int> p, int n) {
-    vector<int> r(n + 1, -9999999);
+    vector<int> r(n + 1, INT_MIN);
     vector<int> s(n + 1, 0);
     
     r[0] = 0;
@@ -29,12 +30,12 @@ int main() {
 
     cout << "Maior val: " << result.first << endl;
     
-    // cout << "Tamanhos das hastes cortadas: ";
+    cout << "Tamanhos das hastes cortadas: ";
     
-    // while (n > 0) {
-    // cout << result.second[n] << " ";
-    // n -= result.second[n];
-    // }
+    while (n > 0) {
+    cout << result.second[n] << " ";
+    n -= result.second[n];
+    }
 
 
     return 0;
