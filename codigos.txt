@@ -59,7 +59,7 @@ procedure HastePD(vetor p[], int n)
   return r[n] and s
 
 
-  5-)
+5-)
 
   procedure ProgDinMatr(vetor P[])
     n = P.size() - 1
