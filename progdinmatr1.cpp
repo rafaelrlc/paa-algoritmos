@@ -34,7 +34,7 @@ void ProgDinMatr(vector<int>& P) {
         }
     }
     
-    cout << "Multiplicação Ótima: ";
+    cout << "R: ";
     imprimir_solucao(s, 1, n);
     cout << endl;
     
