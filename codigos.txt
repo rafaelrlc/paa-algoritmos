@@ -23,7 +23,6 @@ procedure selecao(vetor S[], int k)
 
 2-) 
 
-
 procedure karatsuba(u,v,n)
   if n<= 3 then 
     return uv
@@ -44,6 +43,29 @@ procedure karatsuba(u,v,n)
 
 3-)
 
+procedure PointTs-DC(P,n)
+  if n < lim then
+    Resolva por força bruta
+
+  Ordene os pontos pela coordenada x
+  Compute a linha l que separa os pontos ao meio, particionando P em S1 e S2
+  dl = Points-DC(S4, |S1|)
+  dr = Points-DC(S,, |S5|)
+
+  d <— min(dl,dr)
+
+  Ordene pela coordenada y os pontos na faixa F = (p ∈ P | p.x ∈ [l - d, l + d])
+  Seja m = |F|
+  for i = 1 -> m do
+    k = 1
+    while i + k <= m e p(i+k).y < p do
+      d = min(d, dist(pi, p(i + k)))
+      k = k + 1
+
+  return d
+
+
+4-)
 
 procedure HastePD(vetor p[], int n)
   for i=1 -> n do
